@@ -39,6 +39,7 @@ Built with Spring Boot (Java) and Thymeleaf templates (HTML) :contentReference[o
 ---
 
 ## 📂 Project Structure
+```bash
 ├── bin/ # Gradle wrapper scripts
 ├── build.gradle # Gradle build configuration
 ├── gradle/ # Gradle wrapper files
@@ -63,7 +64,7 @@ Built with Spring Boot (Java) and Thymeleaf templates (HTML) :contentReference[o
 │ │ └── *.html
 │ └── application.yml # Application configuration
 └── test/ # Unit and integration tests
-
+```
 ---
 
 ## ⚙️ Prerequisites
