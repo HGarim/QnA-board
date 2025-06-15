@@ -41,7 +41,6 @@ Built with Spring Boot (Java) and Thymeleaf templates (HTML) :contentReference[o
 ## 📂 Project Structure
 ```bash
 sbb/ # project Root
-├── bin/ # Gradle wrapper scripts
 ├── build.gradle # Gradle build configuration
 ├── gradle/ # Gradle wrapper files
 ├── HELP.md # Project help notes
