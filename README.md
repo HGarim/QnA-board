@@ -40,30 +40,51 @@ Built with Spring Boot (Java) and Thymeleaf templates (HTML) :contentReference[o
 
 ## 📂 Project Structure
 ```bash
+sbb/ # project Root
 ├── bin/ # Gradle wrapper scripts
 ├── build.gradle # Gradle build configuration
 ├── gradle/ # Gradle wrapper files
 ├── HELP.md # Project help notes
 ├── README.md # (You are here)
-├── settings.gradle
+├── settings.gradle # Gradle configuration
 └── src/
 ├── main/
 │ ├── java/
-│ │ └── com.example.board/
-│ │ ├── controller/ # Spring MVC controllers
-│ │ ├── domain/ # JPA entities
-│ │ ├── dto/ # Data Transfer Objects
-│ │ ├── exception/ # Custom exceptions & handlers
-│ │ ├── repository/ # Spring Data JPA repositories
-│ │ ├── service/ # Business logic services
-│ │ └── util/ # Utility classes (e.g., Statistics)
+│ │ └── com.mysite.sbb/ # 기본 패키지
+│ │ ├── commonUtil.java # 공통 유틸 클래스
+│ │ ├── HelloController.java
+│ │ ├── HelloLombok.java
+│ │ ├── MainController.java
+│ │ ├── SbbApplication.java # 스프링 부트 진입점
+│ │ ├── SecurityConfig.java # Spring Security 설정
+│ │ ├── answer/
+│ │ │ ├── Answer.java
+│ │ │ ├── AnswerController.java
+│ │ │ ├── AnswerForm.java
+│ │ │ ├── AnswerRepository.java
+│ │ │ └── AnswerService.java
+│ │ ├── question/
+│ │ │ ├── Question.java
+│ │ │ ├── QuestionController.java
+│ │ │ ├── QuestionForm.java
+│ │ │ ├── QuestionRepository.java
+│ │ │ └── QuestionService.java
+│ │ ├── user/
+│ │ │ ├── SiteUser.java
+│ │ │ ├── UserController.java
+│ │ │ ├── UserCreateForm.java
+│ │ │ ├── UserRepository.java
+│ │ │ ├── UserRole.java
+│ │ │ ├── UserSecurityService.java
+│ │ │ └── UserService.java
+│ │ └── error/
+│ │ │ ├── DataNotFoundException.java
+│ │ │ └── GlobalExceptionHandler.java
 │ └── resources/
-│ ├── templates/ # Thymeleaf HTML templates
-│ │ ├── fragments/ # Header/footer fragments
-│ │ ├── error/ # Error pages (404, etc.)
-│ │ └── *.html
-│ └── application.yml # Application configuration
-└── test/ # Unit and integration tests
+│ ├── application.properties # 설정 파일
+│ └── templates/ # Thymeleaf 템플릿
+│ │ ├── *.html
+└── test # 테스트 코드
 ```
 ---
 
