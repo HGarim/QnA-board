@@ -1,4 +1,4 @@
-# QnA-board
+# sbb (Spring Boot Board)
 
 A simple Q&A (Question & Answer) web application built with Spring Boot and Thymeleaf.
 
